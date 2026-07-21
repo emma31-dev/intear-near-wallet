@@ -555,9 +555,9 @@ checksum = "c08606f8c3cbf4ce6ec8e28fb0014a2c086708fe954eaa885384a6165172e7e8"
 
 [[package]]
 name = "aws-lc-rs"
-version = "1.16.2"
+version = "1.15.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a054912289d18629dc78375ba2c3726a3afe3ff71b4edba9dedfca0e3446d1fc"
+checksum = "7b7b6141e96a8c160799cc2d5adecd5cbbe5054cb8c7c4af53da0f83bb7ad256"
 dependencies = [
  "aws-lc-sys",
  "untrusted 0.7.1",
@@ -566,9 +566,9 @@ dependencies = [
 
 [[package]]
 name = "aws-lc-sys"
-version = "0.39.1"
+version = "0.37.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "83a25cf98105baa966497416dbd42565ce3a8cf8dbfd59803ec9ad46f3126399"
+checksum = "5c34dda4df7017c8db52132f0f8a2e0f8161649d15723ed63fc00c82d0f2081a"
 dependencies = [
  "cc",
  "cmake",
@@ -4681,15 +4681,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "keccak"
-version = "0.1.6"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cb26cec98cce3a3d96cbb7bced3c4b16e3d13f27ec56dbd62cbc8f39cfb9d653"
-dependencies = [
- "cpufeatures",
-]
-
-[[package]]
 name = "keyboard-types"
 version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -5437,9 +5428,9 @@ dependencies = [
 
 [[package]]
 name = "near-config-utils"
-version = "0.37.1"
+version = "0.34.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "70fe450b1373398e71738321751b606fa10a5461a17e3f5ec84f10e3641c7744"
+checksum = "1765fbfda84d4618fc0bd6763639d1b33073580c22eb4b59aa23995da087b686"
 dependencies = [
  "anyhow",
  "json_comments",
@@ -5449,11 +5440,10 @@ dependencies = [
 
 [[package]]
 name = "near-crypto"
-version = "0.37.1"
+version = "0.34.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "07cc0525183a1ac507da68318310283c3a55d7db47febc2efbce9f1714ffac7b"
+checksum = "5798f5ae583148b61ae9c2ca5d1d198a5ed253249254614bba5cbaaa156680af"
 dependencies = [
- "aws-lc-rs",
  "blake2",
  "borsh",
  "bs58 0.4.0",
@@ -5470,7 +5460,6 @@ dependencies = [
  "secp256k1",
  "serde",
  "serde_json",
- "sha3",
  "subtle",
  "thiserror 2.0.18",
 ]
@@ -5512,15 +5501,15 @@ dependencies = [
 
 [[package]]
 name = "near-schema-checker-core"
-version = "0.37.1"
+version = "0.34.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1b76b929fcd3ca312fad49075e6a69ff007b8d953b94d31b271a00512743735a"
+checksum = "5bdb7e133b1446035fb1e3d75845d93e16495a79363ce27e2c6610e3cb54be9d"
 
 [[package]]
 name = "near-schema-checker-lib"
-version = "0.37.1"
+version = "0.34.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8e0ff243f5fbeb5df38cead1453a382bfe509d77380f470d4858ab9ef043d0c1"
+checksum = "b5bd07bdb768ca5afa4280299d535643b08b76a9874af7fba3832680c8dcd8b5"
 dependencies = [
  "near-schema-checker-core",
  "near-schema-checker-macro",
@@ -5528,15 +5517,15 @@ dependencies = [
 
 [[package]]
 name = "near-schema-checker-macro"
-version = "0.37.1"
+version = "0.34.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bea7f6694646ab94200f9c9322b761dfa13b54ee20d7ba5f7672831be368f507"
+checksum = "bc83e346da04fbc822e6ab0b84c3682151b27ec1fdc0b3d84868b9bddcabdf97"
 
 [[package]]
 name = "near-stdx"
-version = "0.37.1"
+version = "0.34.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0756fd99704e5ee8a83430a5f914db53aff72e2a593ce2683bcab15886299b96"
+checksum = "51fcd70712031f1533733495e930fd0423427b098de6829efccd18264ea27338"
 
 [[package]]
 name = "near-token"
@@ -8105,16 +8094,6 @@ dependencies = [
  "cfg-if",
  "cpufeatures",
  "digest 0.10.7",
-]
-
-[[package]]
-name = "sha3"
-version = "0.10.9"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "77fd7028345d415a4034cf8777cd4f8ab1851274233b45f84e3d955502d93874"
-dependencies = [
- "digest 0.10.7",
- "keccak",
 ]
 
 [[package]]
